@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,33 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rent-house</title>
   </head>
-  <body class="h-screen ">
+  <body class="h-screen">
     <main class="h-full">
-    <section class="flex flex-col bg-black ">
-      <header class="flex p-[16px] justify-between items-center sticky">
-        <div><img class="w-[70px] " src="src/imag/logo.png" ></div>
-        <ul class="flex gap-5 items-center">
-          <li class="menuItem">Residencies</li>
-          <li class="menuItem">Our Value</li>
-          <li class="menuItem">Contact Us</li>
-          <li class="menuItem">Get Started</li>
-          <li><button class="px-3 py-2 bg-[#2949C6] text-white rounded-[5px] text-[14px] hover:scale-105">Contact</button></li>
-        </ul>
-      </header>
-      <div class="flex p-10">
-         <section class="flex flex-col gap-8">
-           <div class="relative ">
-            <div class="absolute left-40 w-8 h-8 bg-amber-500 rounded-2xl " ></div>
-            <h1 class="relative text-white text-[38px] font-bold ">Discover <br />Most Suitable <br />Property</h1>
-           </div>
-           <p class="text-gray-500 text-[14px]">Find a variety of properties that suit you very<br>
-              easilty Forget all difficulties in finding a residence for you</p>
-              
-         </section>
-         <section></section>
-      </div>
-    </section>
-
+      <section class="flex flex-col bg-black">
+        <header class="flex p-2 justify-between sticky top-0 ">
+          <div class="p-4">
+            <img class="w-[80px]" src="src/imag/logo.png" />
+          </div>
+          <ul class="flex gap-5 items-center p-10">
+            <li class="menuItem">Residencies</li>
+            <li class="menuItem">Our Value</li>
+            <li class="menuItem">Contact Us</li>
+            <li class="menuItem">Get Started</li>
+            <li>
+              <button
+                class="px-3 py-2 bg-[#2949C6] text-white rounded-[5px] text-[14px] hover:scale-105"
+              >
+                Contact
+              </button>
+            </li>
+          </ul>
+        </header>
+        <div class="flex px-20 py-8 gap-40">
+          <section class="flex flex-col gap-12">
+            <div class="relative">
+              <div
+                class="absolute left-55 w-10 h-10 bg-amber-500 rounded-[50%]"
+              ></div>
+              <h1 class="relative text-white text-[52px] font-bold">
+                Discover <br />Most Suitable <br />Property
+              </h1>
+            </div>
+            <p class="text-gray-500 text-[14px] mt-10">
+              Find a variety of properties that suit you very<br />
+              easilty Forget all difficulties in finding a residence for you
+            </p>
+            <div class="flex items-center w-[600px] gap-2 bg-white p-3 border-2 border-gray-500 rounded-[4px]">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 17C14 17 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 10 17 12 17ZM12 11C13.1046 11 14 10.1046 14 9C14 7.89543 13.1046 7 12 7C10.8954 7 10 7.89543 10 9C10 10.1046 10.8954 11 12 11Z"
+                  fill="#4066ff"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.01158 15.094C6.15376 15.2833 5.37338 15.7521 4.80071 16.4393L3.73374 17.7197C2.64819 19.0223 3.5745 21 5.27018 21H18.73C20.4257 21 21.352 19.0223 20.2665 17.7197L19.1995 16.4393C18.6268 15.7521 17.8464 15.2833 16.9886 15.094C16.9685 15.1199 16.9483 15.1457 16.9281 15.1713C16.2403 16.0438 15.4619 16.8319 14.6801 17.417C13.9573 17.9579 13.0023 18.5 12.0001 18.5C10.9979 18.5 10.0429 17.9579 9.3201 17.417C8.53826 16.8319 7.75984 16.0438 7.07207 15.1713C7.05189 15.1457 7.03172 15.1199 7.01158 15.094Z"
+                  fill="#4066ff"
+                ></path>
+              </svg>
+              <input class="outline-none w-full" type="text">
+              <button
+                class="px-3 py-2 bg-[#2949C6] text-white rounded-[5px] text-[14px] hover:scale-105"
+              >
+                Search
+              </button>
+            </div>
+            <div class="flex gap-6">
+              <div class="flex flex-col">
+               <div class="flex gap-8 items-center">
+                <p class="text-white text-[36px]">9000</p>
+                <svg class="mb-3" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18V14H18C19.1046 14 20 13.1046 20 12C20 10.8954 19.1046 10 18 10H14V6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6V10L6 10C4.89543 10 4 10.8954 4 12C4 13.1046 4.89543 14 6 14L10 14V18Z" fill="#ff922d"></path></svg>
+               </div>
+               <div>
+                <p class="text-gray-500 text-[14px]">Premium Product</p>
+               </div>
+              </div>
+              <div class="flex flex-col">
+               <div class="flex gap-8 items-center">
+                <p class="text-white text-[36px]">2000</p>
+                <svg class="mb-3" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18V14H18C19.1046 14 20 13.1046 20 12C20 10.8954 19.1046 10 18 10H14V6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6V10L6 10C4.89543 10 4 10.8954 4 12C4 13.1046 4.89543 14 6 14L10 14V18Z" fill="#ff922d"></path></svg>
+               </div>
+               <div>
+                <p class="text-gray-500 text-[14px]">Happy Customer</p>
+               </div>
+              </div>
+              <div class="flex flex-col">
+               <div class="flex gap-10 items-center">
+                <p class="text-white text-[36px]">28</p>
+                <svg class="mb-3" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18V14H18C19.1046 14 20 13.1046 20 12C20 10.8954 19.1046 10 18 10H14V6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6V10L6 10C4.89543 10 4 10.8954 4 12C4 13.1046 4.89543 14 6 14L10 14V18Z" fill="#ff922d"></path></svg>
+               </div>
+               <div>
+                <p class="text-gray-500 text-[14px]">Awards Winning</p>
+               </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <img class="rounded-t-full border-8 border-gray-700" src="src/imag/hero-image.png" >
+          </section>
+        </div>
+      </section>
     </main>
     <script type="module" src="/src/main.js"></script>
   </body>
