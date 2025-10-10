@@ -11,3 +11,16 @@ body{
     font-size: 16px;
   }
 }
+@theme{
+  --color-one:rgb(255 ,146 ,45);
+}
+@theme{
+  --color-two:rgb(31, 62 ,114);
+}
+.showhide{
+  height: 100px;
+}
+.contant{
+  display: none;
+}
+
