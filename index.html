@@ -7,9 +7,9 @@
     <title>Rent-House</title>
   </head>
   <body class="h-screen">
-    <main class="h-fit">
-      <section class="flex flex-col bg-black relative">
-        <header class="flex p-2 justify-between sticky top-0 bg-black z-40">
+    <main>
+      <section class="flex flex-col bg-[#131110] relative">
+        <header class="flex p-2 justify-between sticky top-0 bg-[#131110] z-40">
           <div class="p-4">
             <img class="w-[80px]" src="src/imag/logo.png" />
           </div>
@@ -27,17 +27,19 @@
             </li>
           </ul>
         </header>
-        <div class="flex px-20 py-8 gap-40">
+        <div class="flex pl-20 py-18 gap-40">
           <section class="flex flex-col gap-12">
-            <div class="relative ">
+            <div
+              class="relative py-4 -translate-y-12 transition-all duration-1000"
+            >
               <div
                 class="absolute left-55 w-10 h-10 bg-amber-500 rounded-[50%]"
               ></div>
-              <h1 class="relative text-white text-[52px] font-bold ">
+              <h1 class="relative text-white text-[52px] font-bold">
                 Discover <br />Most Suitable <br />Property
               </h1>
             </div>
-            <p class="text-gray-500 text-[14px] mt-10">
+            <p class="text-gray-500 text-[14px]">
               Find a variety of properties that suit you very<br />
               easilty Forget all difficulties in finding a residence for you
             </p>
@@ -74,7 +76,7 @@
             <div class="flex gap-6">
               <div class="flex flex-col">
                 <div class="flex gap-8 items-center">
-                  <p class="text-white text-[36px]">9000</p>
+                  <p id="addNumber1" class="text-white text-[36px]">0</p>
                   <svg
                     class="mb-3"
                     width="24"
@@ -95,7 +97,7 @@
               </div>
               <div class="flex flex-col">
                 <div class="flex gap-8 items-center">
-                  <p class="text-white text-[36px]">2000</p>
+                  <p id="addNumber2" class="text-white text-[36px]">0</p>
                   <svg
                     class="mb-3"
                     width="24"
@@ -116,7 +118,7 @@
               </div>
               <div class="flex flex-col">
                 <div class="flex gap-10 items-center">
-                  <p class="text-white text-[36px]">28</p>
+                  <p id="addNumber3" class="text-white text-[36px]">0</p>
                   <svg
                     class="mb-3"
                     width="24"
@@ -139,7 +141,7 @@
           </section>
           <section>
             <img
-              class="rounded-t-full border-8 border-gray-700 "
+              class="rounded-t-full border-8 border-[#44403c]  -translate-x-[10%] transition-all duration-1000"
               src="src/imag/hero-image.png"
             />
           </section>
@@ -162,22 +164,27 @@
           </div>
           <div class="flex gap-3">
             <button
-              class="text-2xl shadow-md bg-white h-8 w-8 rounded-[4px] hover:bg-gray-100 hover:scale-110 rotate-180"
+              id="back"
+              class="text-2xl shadow-md bg-white h-8 w-8 rounded-[4px] hover:bg-gray-100 hover:scale-110"
             >
-              >
+              &lt;
             </button>
             <button
+              id="next"
               class="text-2xl shadow-md bg-white h-8 w-8 rounded-[4px] hover:bg-gray-100 hover:scale-110"
             >
               >
             </button>
           </div>
         </div>
-        <div id="getSlides" class="flex gap-3 ">
+        <div
+          id="getSlides"
+          class="flex gap-8 overflow-x-hidden overflow-y-hidden"
+        >
           <!-- <div
-            class="flex flex-col duration-300 w-[300px] gap-4 p-5 hover:scale-105 hover:bg-gray-100"
+            class="flex flex-col duration-300 min-w-[300px] gap-4 p-5 hover:scale-105 hover:bg-gray-100"
           >
-            <img src="src/imag/state1.png" />
+            <img  src="src/imag/state1.png" />
             <span class="text-one text-xl font-bold"
               >$ <span class="text-gray-500">47,04</span></span
             >
@@ -207,7 +214,7 @@
             </p>
           </div>
           <div
-            class="showhide flex flex-col p-4 border-1 border-gray-200 gap-5 "
+            class="showhide flex flex-col p-4 border-1 border-gray-200 gap-5 h-[200px] transition-height duration-200"
           >
             <div class="flex justify-between p-2">
               <svg
@@ -251,7 +258,7 @@
             </div>
           </div>
           <div
-            class="showhide flex flex-col p-4 border-1 border-gray-200 gap-5"
+            class="showhide flex flex-col p-4 border-1 border-gray-200 gap-5 h-[200px] transition-height duration-200"
           >
             <div class="flex justify-between p-2">
               <svg
@@ -294,7 +301,7 @@
             </p>
           </div>
           <div
-            class="showhide flex flex-col p-4 border-1 border-gray-200 gap-5"
+            class="showhide flex flex-col p-4 border-1 border-gray-200 gap-5 h-[200px] transition-height duration-200"
           >
             <div class="flex justify-between p-2">
               <svg
@@ -351,7 +358,7 @@
           </div>
           <div class="grid grid-cols-2 gap-4">
             <div
-              class="flex flex-col border-1 border-gray-200 rounded-[5px] p-4 gap-4 hover:scale-105 duration-300 hover:border-[#4066ff]"
+              class="flex flex-col border-1 border-gray-200 rounded-[5px] p-4 gap-4 hover:scale-105 duration-300 hover:shadow-sm shadow-[#4066ff]"
             >
               <div class="flex gap-5">
                 <svg
@@ -380,7 +387,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col border-1 border-gray-200 rounded-[5px] p-4 gap-4 hover:scale-105 duration-300 hover:border-[#4066ff]"
+              class="flex flex-col border-1 border-gray-200 rounded-[5px] p-4 gap-4 hover:scale-105 duration-300 hover:shadow-sm shadow-[#4066ff]"
             >
               <div class="flex gap-5">
                 <svg
@@ -411,7 +418,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col border-1 border-gray-200 rounded-[5px] p-4 gap-4 hover:scale-105 duration-300 hover:border-[#4066ff]"
+              class="flex flex-col border-1 border-gray-200 rounded-[5px] p-4 gap-4 hover:scale-105 duration-300 hover:shadow-sm shadow-[#4066ff]"
             >
               <div class="flex gap-5">
                 <svg
@@ -442,7 +449,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col border-1 border-gray-200 rounded-[5px] p-4 gap-4 hover:scale-105 duration-300 hover:border-[#4066ff]"
+              class="flex flex-col border-1 border-gray-200 rounded-[5px] p-4 gap-4 hover:scale-105 duration-300 hover:shadow-sm shadow-[#4066ff]"
             >
               <div class="flex gap-5">
                 <svg
@@ -476,7 +483,7 @@
         </div>
         <div>
           <img
-            class="rounded-t-full size-160 h-126 "
+            class="rounded-t-full size-160 h-126"
             src="src/imag/contact.jpg"
             alt=""
           />
@@ -519,7 +526,6 @@
           <li class="text-two text-[16px] font-semibold">Services</li>
           <li class="text-two text-[16px] font-semibold">Product</li>
           <li class="text-two text-[16px] font-semibold">About Us</li>
-      
         </ul>
       </div>
     </footer>

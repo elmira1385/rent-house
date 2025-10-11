@@ -19,7 +19,7 @@ body{
 }
 .showhide{
   height: 100px;
-  
+  overflow: hidden;
   
 }
 .contant{
