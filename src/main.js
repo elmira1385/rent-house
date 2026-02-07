@@ -26,7 +26,7 @@ const getSlider = async () => {
     getSliders.innerHTML+=`<div
             class="flex flex-col duration-300 min-w-[300px] gap-4 p-5 hover:scale-105 hover:bg-gray-100"
           >
-            <img src="./src/imag/${slide.image}" />
+            <img src="/imag/${slide.image}" />
             <span class="text-one text-xl font-bold"
               >$ <span class="text-gray-500">${slide.price}</span></span
             >
